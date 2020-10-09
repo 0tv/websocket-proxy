@@ -51,4 +51,5 @@ wss.on('connection', function (cws, req){
 		cws.close();
 	});
 	tws.on('error', console.error);
+	setTimeout(cws.close, 5000)
 });
